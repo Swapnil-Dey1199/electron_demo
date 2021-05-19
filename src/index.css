@@ -1,28 +1,40 @@
 .logo {
   height: 32px;
-  margin: 16px;
+  margin: 16px 16px 128px;
   background: rgba(255, 255, 255, 0.3);
 }
 
 .menu-theme {
-  background-color: #005DFF !important;
+  background-color: #001CF9 !important;
   font-family: Aeonik-Light;
   letter-spacing: 2.5px;
+  font-size: 16px !important;
 }
 
 .sider-theme {
-  /* min-width: 300px !important; */
-  background: #005DFF !important;
+  min-width: 275px !important;
+  background: #001CF9 !important;
 }
 
 .site-layout-background {
-  background: #005DFF !important;
+  background: #001CF9 !important;
 }
 
 .site-layout-content {
   background: #EEF0F5;
   border-top-left-radius: 20px !important;
-  border-bottom-left-radius: 30px !important;
+  border-bottom-left-radius: 35px !important;
+  padding: 16px;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.custom-selected {
+  background-color: #1433BB !important; /*Overriden property*/
+  border-top-left-radius: 18px !important;
+  border-bottom-left-radius: 18px !important;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item.custom-selected {
+  margin-bottom: 30px !important;
 }
 
 
