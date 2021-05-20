@@ -1,0 +1,22 @@
+.company-details-card {
+    order: 1;
+    background-color: #4C5FD0;
+    flex: 1;
+    margin: 24px 24px 12px 24px;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-details-card {
+    order: 2;
+    flex: 1;
+    margin: 12px 24px 24px 24px;
+    border-radius: 10px;
+    border-color: #AAABDF;
+    border-width: 0.5px;
+    border-style: solid;
+    padding: 24px;
+    display: flex;
+}
