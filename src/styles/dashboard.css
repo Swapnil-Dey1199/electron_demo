@@ -1,0 +1,20 @@
+.ant-input-affix-wrapper-sm {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ant-input-affix-wrapper.ant-input-affix-wrapper-sm {
+    border-radius: 3px !important;
+}
+
+.ant-input.ant-input-sm {
+    font-family: Aeonik-Medium;
+    font-size: 9px;
+    color: #9595AD;
+    margin: 3px 0px !important;
+}
+
+.ant-input-suffix {
+    font-family: Aeonik-Bold;
+    font-size: 12px;
+}

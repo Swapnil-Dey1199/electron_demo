@@ -9,10 +9,10 @@ function CompanyDetailsCard() {
                 <div style={{fontFamily: 'Aeonik-Thin', color: 'white', fontSize: '12px', paddingBottom: '10px'}}>
                      Your Details
                 </div>
-                <div style={{fontFamily: 'Aeonik-Light', color: 'white', fontSize: '16px', letterSpacing: '1px', paddingBottom: '10px'}}> 
+                <div style={{fontFamily: 'Aeonik-Light', color: 'white', fontSize: '16px', letterSpacing: '1px', paddingBottom: '0px'}}> 
                     Ceramique Industries
                 </div>
-                <hr/>
+                <Divider dashed style = {{borderColor : 'rgba(255, 255, 255, 1)'}} />
             </div>
             <div className="company-bottom-section">
                 <div className="company-detail-wrapper" style={{order:1}}>

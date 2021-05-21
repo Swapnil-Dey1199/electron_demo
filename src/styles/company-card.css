@@ -1,7 +1,6 @@
 .company-top-section {
     order: 1;
     flex: 1;
-    /* background-color: grey; */
 }
 
 .company-bottom-section {
@@ -34,6 +33,7 @@ hr {
     order: 1;
     text-align: left;
     font-family: Aeonik-Air;
+    letter-spacing: 0.8px;
 }
 
 .company-detail-value {
@@ -41,4 +41,5 @@ hr {
     text-align: right;
     font-family: Aeonik-Light;
     max-width: 150px;
+    letter-spacing: 0.4px;
 }
