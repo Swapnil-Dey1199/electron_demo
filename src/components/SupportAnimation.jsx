@@ -1,11 +1,10 @@
-
 import Lottie from 'react-lottie';
 import animationData from '../assets/animations/support';
 
 function SupportAnimation(){
     const defaultOptions = {
         loop: true,
-        autoplay: true,
+        autoplay: false,
         animationData: animationData,
         rendererSettings: {
           preserveAspectRatio: "xMidYMid slice"
