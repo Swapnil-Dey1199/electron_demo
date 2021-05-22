@@ -2,7 +2,7 @@ import { useState } from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
 import logo from './assets/images/logo.png'
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Menu } from 'antd';
 import {
   ReconciliationOutlined,
   AppstoreOutlined,
@@ -12,7 +12,7 @@ import {
 import Dashboard from './components/Dashboard';
 import DetailsPane from './components/DetailsPane';
 import CustomIcon from './components/CustomIcon';
-import SupportAnimation from './components/SupportAnimation';
+import SupportSection from './components/SupportSection';
 
 const { Content, Sider } = Layout;
 
@@ -71,17 +71,7 @@ function App() {
           </Menu.Item>
         </Menu>
         </div>
-        <div style={{order:2, padding: '0px 24px 24px'}}>
-          <SupportAnimation/>
-          <div className="support-wrapper">
-            <div style={{order:'1', fontFamily:'Aeonik-Bold', fontSize:'12px', paddingTop: '10px'}}>
-              Do you have a question?
-            </div>
-            <div style={{order:'2', paddingBottom:'10px'}}>
-              <Button className='email-button'>Email Us</Button>
-            </div>
-          </div>
-        </div>
+        <SupportSection/>
       </Sider>
       <Layout >
         <Content className="site-layout-content">

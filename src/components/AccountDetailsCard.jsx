@@ -1,6 +1,6 @@
 import '../styles/details-pane.css';
 import '../styles/account-card.css';
-import { Divider, Button } from 'antd';
+import { Button } from 'antd';
 
 function AccountDetailsCard() {
     return (

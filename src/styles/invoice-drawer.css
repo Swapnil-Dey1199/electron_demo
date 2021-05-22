@@ -1,0 +1,44 @@
+.ant-drawer-mask {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ant-drawer-title {
+    font-family: Aeonik-Medium;
+    font-size: 14px;
+}
+
+.anticon-close{
+    font-family: Aeonik-Bold !important;
+    font-size: 12px;
+    color: black;
+}
+
+.ant-drawer-header {
+    border: none !important;
+}
+
+.ant-drawer-body{
+    padding-top: 0px !important;
+}
+
+.recipient-wrapper{
+    border-color: #4C5FD0;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #4ca0d02a;
+    padding: 6px 8px;
+    margin-top: 8px;
+}
+
+.ant-select{
+    font-family: Aeonik-Bold !important;
+}
+
+.ant-select.ant-select-focused.ant-select-single.ant-select-show-arrow.ant-select-open{
+    font-family: Aeonik-Bold !important;
+}
+
+.ant-select-selector{
+    border-radius: 4px !important;
+}

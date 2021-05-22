@@ -1,4 +1,3 @@
-import { Row, Col } from 'antd';
 import '../styles/details-pane.css';
 import AccountDetailsCard from './AccountDetailsCard';
 import CustomerDetailsCard from './CompanyDetailsCard';

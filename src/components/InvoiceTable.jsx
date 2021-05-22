@@ -1,4 +1,4 @@
-import { Table, Pagination } from 'antd';
+import { Table } from 'antd';
 import '../styles/invoice-table.css';
 import CustomIcon from './CustomIcon';
 import {
@@ -11,6 +11,7 @@ const columns = [
       title: 'Invoice Number',
       dataIndex: 'invoiceNumber',
       key: 'invoiceNumber',
+      render: text => <span style ={{fontFamily:'Aeonik-Medium'}}>{text}</span>
     },
     {
       title: 'Billed To',
@@ -45,7 +46,7 @@ const columns = [
   const data = [
     {
       key: '1',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -53,7 +54,7 @@ const columns = [
     },
     {
       key: '2',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -61,7 +62,7 @@ const columns = [
     },
     {
       key: '3',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -69,7 +70,7 @@ const columns = [
     },
     {
       key: '4',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -77,7 +78,7 @@ const columns = [
     },
     {
       key: '5',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -85,7 +86,7 @@ const columns = [
     },
     {
       key: '6',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -93,7 +94,7 @@ const columns = [
     },
     {
       key: '7',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -101,7 +102,7 @@ const columns = [
     },
     {
       key: '8',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -109,7 +110,7 @@ const columns = [
     },
     {
       key: '9',
-      invoiceNumber: '1234/2016-17',
+      invoiceNumber: '#AD3654',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
       amount: '40,000',
@@ -124,10 +125,6 @@ const columns = [
       action: 'Download',
     }
   ];
-
-  function onChange(pageNumber) {
-    console.log('Page: ', pageNumber);
-  }
 
 function InvoiceTable() {
     return (

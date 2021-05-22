@@ -1,7 +1,8 @@
-import { Row, Col, Input, Button } from 'antd';
-import { SearchOutlined, PlusOutlined } from '@ant-design/icons';
+import { Row, Col, Input } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 import '../styles/dashboard.css'
 import InvoiceTable from './InvoiceTable';
+import NewInvoiceButton from './NewInvoiceButton';
 function Dashboard() {
     return (
         <>
@@ -30,12 +31,7 @@ function Dashboard() {
                 <Col
                     span={6}
                     style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textAlign: 'right' }}>
-                    <div style={{ order: 1 }}>
-                        <Button style={{backgroundColor: '#4C5FD0', color: 'white', borderRadius: '4px'}}
-                            icon={<PlusOutlined />}>
-                            <span style={{fontFamily: 'Aeonik-Regular', marginLeft: '4px'}}>New Invoice</span>
-                        </Button>
-                    </div>
+                    <NewInvoiceButton/>
                 </Col>
             </Row>
             <Row style={{ paddingTop: '5px' }}>
