@@ -31,9 +31,8 @@ function Dashboard() {
                     span={6}
                     style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textAlign: 'right' }}>
                     <div style={{ order: 1 }}>
-                        <Button style={{backgroundColor: '#4C5FD0', color: 'white', borderRadius: '3px'}}
-                            icon={<PlusOutlined />}
-                            >
+                        <Button style={{backgroundColor: '#4C5FD0', color: 'white', borderRadius: '4px'}}
+                            icon={<PlusOutlined />}>
                             <span style={{fontFamily: 'Aeonik-Regular', marginLeft: '4px'}}>New Invoice</span>
                         </Button>
                     </div>

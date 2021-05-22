@@ -27,6 +27,7 @@ const columns = [
       title: 'Amount',
       dataIndex: 'amount',
       key: 'amount',
+      render: text => <><span>{text}</span><span style={{fontSize:'9px', fontFamily:'Aeonik-Light', letterSpacing:'0.3px'}}> INR</span></>
     },
     {
       title: 'Action',
@@ -47,7 +48,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -55,7 +56,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -63,7 +64,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -71,7 +72,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -79,7 +80,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -87,7 +88,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -95,7 +96,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -103,7 +104,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -111,7 +112,7 @@ const columns = [
       invoiceNumber: '1234/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     },
     {
@@ -119,7 +120,7 @@ const columns = [
       invoiceNumber: '1234_10/2016-17',
       billedTo: 'Shweta Rao',
       date: '26-02-2016',
-      amount: '40,000 INR',
+      amount: '40,000',
       action: 'Download',
     }
   ];
