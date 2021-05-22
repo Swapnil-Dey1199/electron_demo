@@ -9,13 +9,14 @@ import {
 } from '@ant-design/icons';
 import Dashboard from './components/Dashboard';
 import DetailsPane from './components/DetailsPane';
+import CustomIcon from './components/CustomIcon';
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const getPage = page =>{
-  switch(page){
+const getPage = page => {
+  switch (page) {
     case '1':
-      return <Dashboard/>
+      return <Dashboard />
     default:
       return <div>{page}</div>
   }
@@ -26,30 +27,30 @@ function App() {
   const [page, setPage] = useState('1')
 
   return (
-    <Layout style={{ minHeight: '100vh'}}>
+    <Layout style={{ minHeight: '100vh' }}>
       <Sider
         className="left-sidebar"
         trigger={null}
         theme="light">
         <div className="logo">
-          <img src={logo} height = '58px'/>
+          <img src={logo} height='58px' />
         </div>
         <Menu
           className="menu-theme"
           theme="light"
           defaultSelectedKeys={['1']}
           mode="inline"
-          onClick={({key})=>setPage(key)}>
+          onClick={({ key }) => setPage(key)}>
           <Menu.Item
-            //className="custom-selected"
             key="1"
-            icon={<AppstoreOutlined  style={{ fontSize: '24px', padding: '0px 12px 0px 0px' }} />}>
+            style={{height:'42px'}}
+            icon={ <CustomIcon isNavIcon={true} icon={<AppstoreOutlined/>}/>}>
             DASHBOARD
           </Menu.Item>
           <Menu.Item
-            //className="custom-selected"
             key="2"
-            icon={<ReconciliationOutlined style={{ fontSize: '24px', padding: '0px 12px 0px 0px' }} />}>
+            style={{height:'42px'}}
+            icon={ <CustomIcon isNavIcon={true} icon={<ReconciliationOutlined/>}/>}>
             INVENTORY
           </Menu.Item>
           {/* <Menu.Item
@@ -83,7 +84,7 @@ function App() {
         className="right-sidebar"
         trigger={null}
         theme="light">
-          <DetailsPane/>
+        <DetailsPane />
       </Sider>
     </Layout>
   );

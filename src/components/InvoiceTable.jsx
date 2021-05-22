@@ -1,5 +1,10 @@
 import { Table, Pagination } from 'antd';
 import '../styles/invoice-table.css';
+import CustomIcon from './CustomIcon';
+import {
+  DownloadOutlined,
+  EyeOutlined,
+} from '@ant-design/icons';
 
 const columns = [
     {
@@ -27,6 +32,12 @@ const columns = [
       title: 'Action',
       dataIndex: 'action',
       key: 'action',
+      render: text =>(
+        <div>
+          <span><CustomIcon isNavIcon={false} icon={<DownloadOutlined/>} prompt="Download Invoice"/></span>
+          <span><CustomIcon isNavIcon={false} icon={<EyeOutlined/>} prompt="View Invoice"/></span>
+        </div>
+      )
     },
   ];
   

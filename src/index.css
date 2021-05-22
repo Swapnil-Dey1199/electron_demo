@@ -47,6 +47,10 @@ body{
   font-family: Aeonik-Regular;
 }
 
+.anticon{
+  margin: 0px !important;
+}
+
 @font-face {
   font-family: 'Aeonik-Air';
   src: url(./fonts/Aeonik-Air.otf);

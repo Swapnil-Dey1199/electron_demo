@@ -1,0 +1,19 @@
+.icon-wrapper{
+    display: inline-block;
+    background-color: #4ca0d02a;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 0px 3px;
+}
+
+.nav-icon-wrapper{
+    display: inline-block;
+    background-color: #4ca0d02a;
+    border-radius: 4px;
+    padding: 0px 12px;
+    margin-right: 18px;
+}
+
+.icon-wrapper:hover{
+    color: blue;
+}
