@@ -12,15 +12,6 @@
     justify-content: space-evenly;
 }
 
-hr {
-    border: none;
-    border-top: 1px dashed white;
-    color: #fff;
-    background-color: #fff;
-    height: 1px;
-    width: 100%;
-}
-
 .company-detail-wrapper {
     display: flex;
     flex-direction: row;

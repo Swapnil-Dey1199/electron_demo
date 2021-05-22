@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
+import logo from './resources/logo.png'
 import { Layout, Menu, Space } from 'antd';
 import {
   ReconciliationOutlined,
   AppstoreOutlined,
-  AppstoreTwoTone
 } from '@ant-design/icons';
 import Dashboard from './components/Dashboard';
 import DetailsPane from './components/DetailsPane';
@@ -26,12 +26,14 @@ function App() {
   const [page, setPage] = useState('1')
 
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout style={{ minHeight: '100vh'}}>
       <Sider
         className="left-sidebar"
         trigger={null}
         theme="light">
-        <div className="logo" />
+        <div className="logo">
+          <img src={logo} height = '58px'/>
+        </div>
         <Menu
           className="menu-theme"
           theme="light"

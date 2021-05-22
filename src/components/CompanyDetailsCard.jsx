@@ -10,7 +10,7 @@ function CompanyDetailsCard() {
                      Your Details
                 </div>
                 <div style={{fontFamily: 'Aeonik-Light', color: 'white', fontSize: '16px', letterSpacing: '1px', paddingBottom: '0px'}}> 
-                    Ceramique Industries
+                    RS Innovations
                 </div>
                 <Divider dashed style = {{borderColor : 'rgba(255, 255, 255, 1)'}} />
             </div>
