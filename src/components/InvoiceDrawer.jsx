@@ -1,27 +1,20 @@
 import "../styles/invoice-drawer.css";
-import { Button, Drawer, Row, Col, Select } from "antd";
+import { Button, Drawer, Row, Col, Select, DatePicker } from "antd";
 import { forwardRef, useState, useImperativeHandle } from "react";
+import TextArea from "antd/lib/input/TextArea";
+import DrawerFooter from "./DrawerFooter";
 
 const options = [
-  { label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },{ label: "asd", value: "adf" },
-  { label: "asd", value: "adf" },
+  { label: "Walmart", value: "Walmart" },
+  { label: "Amazon", value: "Amazon" },
+  { label: "Microsoft", value: "Microsoft" },
+  { label: "Goldman Sachs", value: "Goldman Sachs" },
+  { label: "RS Innovations", value: "RS Innovations" },
+  { label: "SpaceX", value: "SpaceX" },
+  { label: "Google", value: "Google" },
+  { label: "Apple", value: "Apple" },
+  { label: "Samsung", value: "Samsung" },
+  { label: "Xiaomi", value: "Xiaomi" },
 ];
 
 function InvoiceDrawer(props, ref) {
@@ -34,20 +27,11 @@ function InvoiceDrawer(props, ref) {
   return (
     <Drawer
       title="Create new invoice"
-      width="35%"
+      width="34%"
       onClose={() => setIsOpen(false)}
       visible={isOpen}
       bodyStyle={{ paddingBottom: 80 }}
-      footer={
-        <div
-          style={{
-            textAlign: "right",
-          }}
-        >
-          <Button style={{ marginRight: 8 }}>Cancel</Button>
-          <Button type="primary">Submit</Button>
-        </div>
-      }
+      footer={<DrawerFooter/>}
     >
       <>
         <Row>
@@ -61,7 +45,7 @@ function InvoiceDrawer(props, ref) {
           <Col span={24}>
             <div className="recipient-wrapper">
               <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px" }}>
-                Recipient Email
+                Recipient Name
               </div>
               <Select
                 style={{ width: "100%", padding: '5px 0px' }}
@@ -69,6 +53,28 @@ function InvoiceDrawer(props, ref) {
                 defaultValue="Choose recipient"
 
               ></Select>
+              <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px", paddingTop: "4px"}}>
+                Recipient Address
+              </div>
+              <TextArea rows={3}/>
+            </div>
+          </Col>
+        </Row>
+        <Row style={{margin:'6px 0px'}}>
+          <Col span={12}>
+            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px" }}>
+              Issued On
+            </div>
+            <div style={{padding: '5px 15px 5px 0px'}}>
+              <DatePicker  format='MMM DD, YYYY' style={{ width: '100%' }} />
+            </div>
+          </Col>
+          <Col span={12}>
+            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px" }}>
+              Due On
+            </div>
+            <div style={{padding: '5px 0px'}}>
+              <DatePicker  format='MMM DD, YYYY' style={{ width: '100%' }} />
             </div>
           </Col>
         </Row>

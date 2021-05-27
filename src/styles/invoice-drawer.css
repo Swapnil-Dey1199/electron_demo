@@ -27,7 +27,7 @@
     border-style: solid;
     border-radius: 4px;
     background-color: #4ca0d02a;
-    padding: 6px 8px;
+    padding: 6px 8px 8px;
     margin-top: 8px;
 }
 
@@ -40,5 +40,20 @@
 }
 
 .ant-select-selector{
+    border-radius: 4px !important;
+}
+
+textarea.ant-input {
+    margin-top: 5px !important;
+    border-radius: 4px !important;
+    font-family: Aeonik-Medium;
+    resize: none;
+}
+
+.ant-picker-input {
+    font-family: Aeonik-Medium !important;
+}
+
+div.ant-picker {
     border-radius: 4px !important;
 }

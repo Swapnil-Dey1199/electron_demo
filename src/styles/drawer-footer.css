@@ -1,0 +1,29 @@
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.clear-btn {
+    margin-right: 8px;
+    font-family: Aeonik-Medium;
+    font-size: 12px;
+    letter-spacing: 0.5px !important;
+}
+
+.clear-btn:hover {
+    border-color: #4C5FD0;
+    color: #4C5FD0;
+}
+
+.save-btn {
+    font-family: Aeonik-Medium;
+    font-size: 12px;
+    background-color: #4C5FD0;
+    border-color: #4C5FD0;
+    letter-spacing: 0.5px !important;
+}
+
+.save-btn:hover {
+    background-color: #4C5FD0;
+}
