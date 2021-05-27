@@ -31,6 +31,17 @@
     margin-top: 8px;
 }
 
+.line-item-cell{
+    font-family: Aeonik-Regular;
+    font-size: 12px; 
+    text-align: right;
+    padding-right: 15px;
+}
+
+.line-header-cell{
+    color: #606074;
+}
+
 .ant-select{
     font-family: Aeonik-Bold !important;
 }
@@ -56,4 +67,20 @@ textarea.ant-input {
 
 div.ant-picker {
     border-radius: 4px !important;
+}
+
+.ant-input {
+    border-radius: 4px !important;
+}
+
+.center-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }

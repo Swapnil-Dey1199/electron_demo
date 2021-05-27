@@ -1,20 +1,21 @@
 import "../styles/invoice-drawer.css";
-import { Button, Drawer, Row, Col, Select, DatePicker } from "antd";
+import { Drawer, Row, Col, Select, DatePicker } from "antd";
 import { forwardRef, useState, useImperativeHandle } from "react";
 import TextArea from "antd/lib/input/TextArea";
 import DrawerFooter from "./DrawerFooter";
+import InvoiceDrawerLineItem from "./InvoiceDrawerLineItem";
 
 const options = [
-  { label: "Walmart", value: "Walmart" },
-  { label: "Amazon", value: "Amazon" },
-  { label: "Microsoft", value: "Microsoft" },
-  { label: "Goldman Sachs", value: "Goldman Sachs" },
-  { label: "RS Innovations", value: "RS Innovations" },
-  { label: "SpaceX", value: "SpaceX" },
-  { label: "Google", value: "Google" },
-  { label: "Apple", value: "Apple" },
-  { label: "Samsung", value: "Samsung" },
-  { label: "Xiaomi", value: "Xiaomi" },
+  { label: "Walmart", value: "WLMRT" },
+  { label: "Amazon", value: "AMZN" },
+  { label: "Microsoft", value: "MCRSFT" },
+  { label: "Goldman Sachs", value: "GS" },
+  { label: "RS Innovations", value: "RS" },
+  { label: "SpaceX", value: "SPCX" },
+  { label: "Google", value: "GGL" },
+  { label: "Apple", value: "APL" },
+  { label: "Samsung", value: "SMSNG" },
+  { label: "Xiaomi", value: "XMI" },
 ];
 
 function InvoiceDrawer(props, ref) {
@@ -48,10 +49,11 @@ function InvoiceDrawer(props, ref) {
                 Recipient Name
               </div>
               <Select
+              showSearch
                 style={{ width: "100%", padding: '5px 0px' }}
                 options={options}
                 defaultValue="Choose recipient"
-
+                onSelect={value=>console.log(value)}
               ></Select>
               <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px", paddingTop: "4px"}}>
                 Recipient Address
@@ -62,7 +64,7 @@ function InvoiceDrawer(props, ref) {
         </Row>
         <Row style={{margin:'6px 0px'}}>
           <Col span={12}>
-            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px" }}>
+            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px", color: '#606074' }}>
               Issued On
             </div>
             <div style={{padding: '5px 15px 5px 0px'}}>
@@ -70,7 +72,7 @@ function InvoiceDrawer(props, ref) {
             </div>
           </Col>
           <Col span={12}>
-            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px" }}>
+            <div style={{ fontFamily: "Aeonik-Regular", fontSize: "12px", color: '#606074' }}>
               Due On
             </div>
             <div style={{padding: '5px 0px'}}>
@@ -78,6 +80,30 @@ function InvoiceDrawer(props, ref) {
             </div>
           </Col>
         </Row>
+        <Row style={{marginBottom:'6px'}}>
+          <Col span={12}>
+            <div className="line-item-cell line-header-cell" style={{ textAlign:'left'}}>
+              Description
+            </div>
+          </Col>
+          <Col span={3}>
+            <div className="line-item-cell line-header-cell">
+              Qty
+            </div>
+          </Col>
+          <Col span={4}>
+            <div className="line-item-cell line-header-cell">
+              Price
+            </div>
+          </Col>
+          <Col span={4}>
+            <div className="line-item-cell line-header-cell">
+              Total
+            </div>
+          </Col>
+          <Col span={1}></Col>
+        </Row>
+        <InvoiceDrawerLineItem/>
       </>
     </Drawer>
   );
