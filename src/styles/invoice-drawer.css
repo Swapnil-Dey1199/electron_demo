@@ -73,6 +73,26 @@ div.ant-picker {
     border-radius: 4px !important;
 }
 
+.line-item-cell .ant-input {
+    padding: 4px !important;
+}
+
+.ant-btn-icon-only {
+    padding : 0px !important;
+    border : none;
+    outline: none;
+    background-color: white;
+}
+
+.ant-btn[disabled] {
+    background-color: white !important;
+    color : rgba(0, 0, 0, 1);
+} 
+
+.anticon-close:hover{
+    color: #4C5FD0 !important;
+}
+
 .center-vertical{
     display: flex;
     flex-direction: column;
@@ -83,4 +103,8 @@ div.ant-picker {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.ant-drawer-body{
+    overflow: hidden;
 }

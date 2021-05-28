@@ -16,4 +16,5 @@
 
 .icon-wrapper:hover{
     color: blue;
+    cursor:pointer;
 }

@@ -1,0 +1,9 @@
+.line-item-wrapper::-webkit-scrollbar {
+    display: none;
+ }
+
+ .line-item-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+ }

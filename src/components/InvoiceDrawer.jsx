@@ -31,10 +31,9 @@ function InvoiceDrawer(props, ref) {
       width="34%"
       onClose={() => setIsOpen(false)}
       visible={isOpen}
-      bodyStyle={{ paddingBottom: 80 }}
       footer={<DrawerFooter/>}
     >
-      <>
+      <div>
         <Row>
           <Col span={24}>
             <span style={{ fontFamily: "Aeonik-Medium", fontSize: "22px" }}>
@@ -104,7 +103,7 @@ function InvoiceDrawer(props, ref) {
           <Col span={1}></Col>
         </Row>
         <InvoiceDrawerLineItem/>
-      </>
+      </div>
     </Drawer>
   );
 }
